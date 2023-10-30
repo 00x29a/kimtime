@@ -7,10 +7,10 @@ This repository contains a shell script `kimtime.sh` for time tracking with [Kim
 To run the script, use the following command:
 
 ```bash
-./kimtime.sh -a "activity" -p "project" -c "config.cfg"
+./kimtime.sh -a "activity" -p "project" -c ".kimtime.conf"
 ```
 
-Replace "activity", "project", and "config.cfg" with the actual activity, project, and config file. The config file option is optional and defaults to "config.cfg".
+Replace "activity", "project", and ".kimtime.conf" with the actual activity, project, and config file. The config file option is optional and defaults to ".kimtime.conf".
 
 ## Configuration
 

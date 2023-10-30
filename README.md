@@ -12,6 +12,20 @@ To run the script, use the following command:
 
 Replace "activity", "project", and "config.cfg" with the actual activity, project, and config file. The config file option is optional and defaults to "config.cfg".
 
+## Requirements
+
+This script requires the following:
+
+1. **Bash shell**: The script is written in Bash. Most Linux distributions come with Bash preinstalled.
+
+2. **cURL**: The script uses cURL to send HTTP requests. You can install cURL with the package manager for your Linux distribution. For example, on Ubuntu, you can install cURL with `sudo apt install curl`.
+
+3. **jq**: The script uses jq to parse JSON responses. You can install jq with the package manager for your Linux distribution. For example, on Ubuntu, you can install jq with `sudo apt install jq`.
+
+4. **Kimai2 API**: The script interacts with the Kimai2 API. You need to have access to a Kimai2 instance and an API token.
+
+5. **Config file**: The script reads the username, Kimai2 URL, and API token from a config file. You need to create this config file and provide the correct values.
+
 ## Configuration
 
 The script reads the username, Kimai2 URL, and API token from a config file. Here's what the config file would look like:

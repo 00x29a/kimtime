@@ -1,21 +1,33 @@
 #!/bin/bash
 
 # Default config file
-CONFIG_FILE="config.cfg"
+CONFIG_FILE="./.kimtime.conf"
 
 # Parse command line options
-while getopts a:p:c:h option
+while getopts a:p:c:g:h option
 do
 case "${option}"
 in
 a) ACTIVITY=${OPTARG};;
 p) PROJECT=${OPTARG};;
 c) CONFIG_FILE=${OPTARG};;
+g) if [ ! -f $CONFIG_FILE ]; then
+       echo "USERNAME=\"your_username\"" > $CONFIG_FILE
+       echo "KIMAI_URL=\"https://your-kimai-url.com\"" >> $CONFIG_FILE
+       echo "API_TOKEN=\"your_api_token\"" >> $CONFIG_FILE
+       echo "Default config file $CONFIG_FILE has been created."
+       echo "Please edit it with your actual username, Kimai URL, and API token."
+       exit 0
+   else
+       echo "Config file $CONFIG_FILE already exists."
+       exit 1
+   fi;;
 h) echo "Usage: $0 -a <activity> -p <project> [-c <config_file>]"
    echo "Options:"
    echo "  -a <activity>    Specify the activity"
    echo "  -p <project>     Specify the project"
    echo "  -c <config_file> Specify the config file (default: config.cfg)"
+   echo "  -g               Generate a default config file"
    echo "  -h               Display this help message"
    exit 0;;
 esac

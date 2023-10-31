@@ -44,6 +44,14 @@ This script requires the following:
 
 5. **Config file**: The script reads the username, Kimai URL, and API token from a config file. You need to create this config file and provide the correct values.
 
+## TODO
+
+- [ ] Request active projects and activities
+- [ ] add tags a la `-t #data #python` etc
+- [ ] create new timesheets if none have been initiated.
+- [ ] create new activities
+- [ ] generate notifications
+
 ## License
 
 This project is licensed under the MIT License - see the [LICENSE.md](LICENSE.md) file for details

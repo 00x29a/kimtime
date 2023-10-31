@@ -1,6 +1,6 @@
-# kimtime.sh Kimai Time Tracking Script
+# kimtime.sh Kimai clock in/out script
 
-This repository contains a shell script `kimtime.sh` for time tracking with [Kimai](https://github.com/kevinpapst/kimai). The script uses the Kimai API to clock in and out of activities and projects.
+This repository contains a shell script `kimtime.sh` for time tracking with [Kimai](https://github.com/kevinpapst/kimai). The script uses the Kimai API to clock in and out of activities and projects. The original intention was to make an easy way to clock in and out of various projects in Kimai using hotkeys without having to open a GUI. 
 
 ## Usage
 

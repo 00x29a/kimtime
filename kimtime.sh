@@ -22,12 +22,12 @@ g) if [ ! -f $CONFIG_FILE ]; then
        echo "Config file $CONFIG_FILE already exists."
        exit 1
    fi;;
-h) echo "Usage: $0 -a <activity> -p <project> [-c <config_file>]"
+h) echo "Usage: $0 -a <activity> -p <project> [-c <config_file>] [-g <new_config_name>]"
    echo "Options:"
    echo "  -a <activity>    Specify the activity"
    echo "  -p <project>     Specify the project"
    echo "  -c <config_file> Specify the config file (default: config.cfg)"
-   echo "  -g               Generate a default config file"
+   echo "  -g               Generate a default config file. Usage: -g <desired_config_name>"
    echo "  -h               Display this help message"
    exit 0;;
 esac
